@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Testing Pages</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+    }
+    h1 {
+      color: #111827;
+      margin-top: 0;
+    }
+    .description {
+      color: #6b7280;
+      margin-bottom: 2rem;
+    }
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .link-card {
+      display: block;
+      text-decoration: none;
+      padding: 1rem;
+      border-radius: 6px;
+      border: 1px solid #e5e7eb;
+      transition: all 0.15s ease;
+    }
+    .link-card:hover {
+      border-color: #4f46e5;
+      background-color: #f9fafb;
+    }
+    .link-card h2 {
+      margin: 0 0 0.25rem;
+      font-size: 1.125rem;
+      color: #111827;
+    }
+    .link-card p {
+      margin: 0;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+    .note {
+      margin-top: 2rem;
+      padding: 0.75rem;
+      background-color: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Testing Pages</h1>
+    <p class="description">The following pages are available for testing admin functionality:</p>
+    
+    <div class="link-list">
+      <a href="/admin-login.html" class="link-card">
+        <h2>Admin Login Test</h2>
+        <p>Test page for logging in as an admin user without authentication issues</p>
+      </a>
+      
+      <a href="/outbound-payments.html" class="link-card">
+        <h2>Outbound Payments</h2>
+        <p>Direct access to the outbound payments management interface</p>
+      </a>
+    </div>
+    
+    <div class="note">
+      <strong>Note:</strong> These are standalone testing pages that bypass the React application framework and directly interact with the server API. For production use, please use the integrated application experience.
+    </div>
+  </div>
+</body>
+</html>
